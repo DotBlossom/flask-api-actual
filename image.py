@@ -6,7 +6,7 @@ import os
 
 
 load_dotenv()  # .env 파일 로드
-bucket_name = "pj3-payday"
+bucket_name = os.environ.get('GOOGLE_BUCKET_NAME')
 
 upload_bp = Blueprint('upload', __name__)
 download_bp = Blueprint('download', __name__)
