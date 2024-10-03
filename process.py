@@ -51,7 +51,8 @@ def send_to_gpu_server(id):
         return jsonify({"이미지 전송 오류": str(e)}), 500
 
     # OCR URL
-    ocr_url = 'http://127.0.0.1:5000/ocr'
+    path_ocr = os.environ.get('OCR_URL')
+    ocr_url = f'http://{path_ocr}/ocr'
     
     # 이미지 파일을 OCR에 맞춰 변환(dict 형식)
     files = {'image': (file_info['filename'], file_info['file_content'], file_info['content_type'])}
