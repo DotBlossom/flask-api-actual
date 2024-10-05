@@ -32,7 +32,8 @@ kafka pub/sub를 통해 data를 보낸다면, session 1에 kafka sub를 추가�
 ![KakaoTalk_20241002_154834652](https://github.com/user-attachments/assets/eaa27a41-ad65-430b-81a3-0d4aeecb5d8c)
 
 ### 5,6 세션은 아직 미구현이지만 
-    최종적인 목표는, 사용자가 수정한 text 데이터(refined)를 kafka로 받아, 자동으로 모델을 학습시키는 Recursive Train/gpu 서버를 하나 더 두는것.
+    최종적인 목표는, 사용자가 수정한 text 데이터(refined)를 kafka로 받아, 
+    자동으로 모델을 학습시키는 Recursive Train/gpu 서버를 하나 더 두는것.
 
 ### Long Term 통계 Data를 이용해서, 새로운 Insight 도출 가능 예상.
     locational(regional) preference , action predict, patterns similarity Calculations 등을 부가적으로 계산 가능
