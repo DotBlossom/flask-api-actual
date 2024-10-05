@@ -17,6 +17,10 @@ image upload 후, background 형식의 작업요청을 통해, 딥러닝 서버�
 
 이런 근거로 api-buffer server를 앞에 두고, 유사 proxy 하는 구조
 
+### 이미지 학습 개선을 위한 무중단 테스트
+        추가로, dl 서버를 내리지 않고도 , local에서 지속적으로 Model 전처리 방법등만을 따로 api로 올려서 
+        k8s cluster에 무중단 추가 가능
+
 
 ### 만약 kafka를 도입하여, front 요청을 msg/pubsub로 대체한다면
     1. 더 세부적인 dataflow 컨트롤이 가능하고
