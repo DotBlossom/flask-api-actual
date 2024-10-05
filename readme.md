@@ -22,3 +22,6 @@ image upload 후, background 형식의 작업요청을 통해, 딥러닝 서버�
     1. 더 세부적인 dataflow 컨트롤이 가능하고
     2. msg의 특징을 이용하여 secondary caching or non perisist db로 이용가능
     3. 그리고 msq의 header를 인식하여 데이터 간접 수집도 가능하고 언제든지 elastic search 3신기 도입가능
+
+### flask APIs 구조
+![KakaoTalk_20240928_105422891 (1)](https://github.com/user-attachments/assets/2982eae8-a293-47ca-a65b-c75c2133810c)
