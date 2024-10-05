@@ -24,4 +24,11 @@ flaskapi-bufferServer를 통해
 5.각자 k8s 서비스를 loadbalancer로 서버를 구성하여, 트래픽에 따라
 유동적으로 deployment-> pod replication
 
-이런 근거로 api-buffer server를 앞에 두고, proxy 하는 구조
+이런 근거로 api-buffer server를 앞에 두고, 유사 proxy 하는 구조
+
+
+만약 kafka를 도입하여,
+front 요청을 msq로 대체한다면, 더 세부적인 컨트롤이 가능하고
+msq의 특징을 이용하여 secondary caching or non perisist db로 이용가능
+그리고 msq의 header를 인식하여 데이터 간접 수집도 가능하고
+언제든지 elastic search 3신기 도입가능
