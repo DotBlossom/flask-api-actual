@@ -23,5 +23,16 @@ image upload 후, background 형식의 작업요청을 통해, 딥러닝 서버�
     2. msg의 특징을 이용하여 secondary caching or non perisist db로 이용가능
     3. 그리고 msq의 header를 인식하여 데이터 간접 수집도 가능하고 언제든지 elastic search 3신기 도입가능
 
-### flask APIs 구조
+### flask APIs(cluster) 구조
 ![KakaoTalk_20240928_105422891 (1)](https://github.com/user-attachments/assets/2982eae8-a293-47ca-a65b-c75c2133810c)
+
+kafka pub/sub를 통해 data를 보낸다면, session 1에 kafka sub를 추가할 뿐임.
+
+### flask APIs cluster 목차 이미지 
+![KakaoTalk_20241002_154834652](https://github.com/user-attachments/assets/eaa27a41-ad65-430b-81a3-0d4aeecb5d8c)
+
+### 6, 7 세션은 아직 미구현이지만 
+    최종적인 목표는, 사용자가 수정한 text 데이터를 kafka로 받아, 자동으로 모델을 학습시키는 Train/gpu 서버를 하나 더 두는것.
+
+### Long Term 통계 Data를 이용해서, 새로운 Insight 도출 가능 예상.
+    locational(regional) preference , action predict, patterns similarity Calculations 등을 부가적으로 계산 가능
